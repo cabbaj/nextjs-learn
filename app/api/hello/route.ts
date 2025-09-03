@@ -2,7 +2,7 @@ export async function GET() {
   return Response.json({ message: "hello" });
 }
 
-// about folder
+// call in about folder
 export async function POST(req: Request) {
   const data = await req.json();
   const { name } = data; // { name } is destructuring access the name property directly
